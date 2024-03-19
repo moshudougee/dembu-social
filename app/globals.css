@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply h-full bg-[#07041fe5]
+}
+
+
+body {
+  @apply h-full 
+}
+
+

@@ -27,10 +27,10 @@ const CommentItem = ({ data = {} }) => {
     <div 
         className='
             border-b-[1px] 
-            border-neutral-800 
+            border-neutral-600 
             p-5 
             cursor-pointer 
-            hover:bg-neutral-900 
+            hover:bg-[#0b0a1be5] 
             transition
         '
     >

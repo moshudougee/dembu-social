@@ -13,6 +13,7 @@
     "axios": "^1.6.7",
     "bcrypt": "^5.1.1",
     "date-fns": "^3.4.0",
+    "dembu-social": "file:",
     "mongodb": "^6.5.0",
     "mongoose": "^8.2.1",
     "next": "14.1.3",

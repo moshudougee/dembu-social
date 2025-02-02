@@ -5,9 +5,18 @@ import Avatar from '../Avatar';
 
 
 const FollowBar = () => {
-  const { data: users = [] } = useUsers();
-  if(users.length === 0) {
-    return null;
+  // There is some logic wrong with this interms of updating after changes
+  const { data: users = [], isLoading, error } = useUsers();
+
+  if(isLoading) {
+    return (
+      <div>Loading...</div>
+    )
+  }
+  if(error || users.length === 0) {
+    return (
+      <div>An error occurred...</div>
+    );
   }
   return (
     <div className='px-6 py-4 hidden lg:block'>
